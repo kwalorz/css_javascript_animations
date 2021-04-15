@@ -7,19 +7,43 @@
 header {
   height: 100vh;
   width: 100vw;
-  background: radial-gradient(
-    circle,
-    rgba(91, 88, 88, 1) 0%,
+  position: relative;
+  background: rgb(51, 51, 51);
+  background: linear-gradient(
+    45deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(175, 173, 173, 1) 50%,
     rgba(209, 203, 203, 1) 100%
   );
+
+  /* background: linear-gradient(
+    rgba(91, 88, 88, 1) 0%,
+    rgba(91, 88, 88, 1) 19%,
+    rgba(91, 88, 88, 1) 34%,
+    rgba(91, 88, 88, 1) 47%,
+    rgba(91, 88, 88, 1) 56.5%,
+    rgba(91, 88, 88, 1) 65%,
+    rgba(91, 88, 88, 1) 73%,
+    rgba(91, 88, 88, 1) 80.2%,
+    rgba(91, 88, 88, 1) 86.1%,
+    rgba(91, 88, 88, 1) 91%,
+    rgba(91, 88, 88, 1) 95.2%,
+    rgba(91, 88, 88, 1) 98.2%,
+    rgba(209, 203, 203, 1) 100%
+  ); */
 }
 .header__bubble-container {
   position: absolute;
-  width: 100%;
+  top: 25%;
+  left: 45%;
+}
+
+.header__bubble-icon {
+  margin: 10px;
 }
 .header__bubble-icon img {
-  height: 150px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   object-fit: cover;
